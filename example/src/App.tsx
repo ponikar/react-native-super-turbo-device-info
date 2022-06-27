@@ -1,18 +1,17 @@
 import * as React from 'react';
 
 import { StyleSheet, View, Text } from 'react-native';
-import { multiply } from 'react-native-turbo-device-info';
+import { getIpAddress, getMacAddress } from 'react-native-turbo-device-info';
 
 export default function App() {
-  const [result, setResult] = React.useState<number | undefined>();
+  const [macAddress] = React.useState<string>(getIpAddress());
+  const [ipAddress] = React.useState<string>(getMacAddress());
 
-  React.useEffect(() => {
-    multiply(3, 7).then(setResult);
-  }, []);
 
   return (
     <View style={styles.container}>
-      <Text>Result: {result}</Text>
+      <Text>Mac Address: {macAddress}</Text>
+      <Text>Ip Address: {ipAddress}</Text>
     </View>
   );
 }
