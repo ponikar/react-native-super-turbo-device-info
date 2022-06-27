@@ -1,5 +1,14 @@
-const TurboDeviceInfo = require('./NativeTurboDeviceInfo').default
+import NativeTurboDeviceInfo from "./NativeTurboDeviceInfo";
 
-export function multiply(a: number, b: number): Promise<number> {
-  return TurboDeviceInfo.multiply(a, b);
+
+export function isEmulator(): Promise<boolean> {
+  return NativeTurboDeviceInfo.isEmulator();
+}
+
+export function getIpAddress() :string {
+  return NativeTurboDeviceInfo.getIpAddress();
+}
+
+export function getMacAddress() :string {
+  return NativeTurboDeviceInfo.getMacAddress();
 }
