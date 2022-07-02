@@ -3,7 +3,9 @@ import {TurboModule, TurboModuleRegistry} from 'react-native';
 interface Spec extends TurboModule {
   getIpAddress(): string;
 
-  isEmulator(): Promise<boolean>;
+  getIpAddressAsync(): Promise<string>;
+
+  isEmulatorAsync(): Promise<boolean>;
 
   getMacAddress(): string;
 }

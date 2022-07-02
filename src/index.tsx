@@ -2,7 +2,7 @@ import NativeTurboDeviceInfo from "./NativeTurboDeviceInfo";
 
 
 export function isEmulator(): Promise<boolean> {
-  return NativeTurboDeviceInfo.isEmulator();
+  return NativeTurboDeviceInfo.isEmulatorAsync();
 }
 
 export function getIpAddress() :string {
