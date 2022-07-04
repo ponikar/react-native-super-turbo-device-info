@@ -36,13 +36,13 @@
     "ios",
     "android"
   ],
-  "repository": "https://github.com/ponikar/react-native-turbo-device-info",
+  "repository": "https://github.com/ponikar/react-native-super-turbo-device-info",
   "author": "Darshan Ponikar <itsponikar@gmail.com> (https://github.com/ponikar)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/ponikar/react-native-turbo-device-info/issues"
+    "url": "https://github.com/ponikar/react-native-super-turbo-device-info/issues"
   },
-  "homepage": "https://github.com/ponikar/react-native-turbo-device-info#readme",
+  "homepage": "https://github.com/ponikar/react-native-super-turbo-device-info#readme",
   "publishConfig": {
     "registry": "https://registry.npmjs.org/"
   },
