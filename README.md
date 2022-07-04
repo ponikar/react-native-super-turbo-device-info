@@ -25,7 +25,7 @@ RCT_NEW_ARCH_ENABLED=1 bundle exec pod install
 
 ## Android 
 
-1. In android make sure you have hermes enabled. Follow this step to enable hermes. 
+1. In android make sure you have hermes enabled. Follow [this step](https://reactnative.dev/docs/hermes) to enable hermes. 
 
 2. Enable new Architecture in `gradle.properites` file
 
@@ -52,7 +52,7 @@ const getMacAddress = getMacAddress();
 
 ## Contributing
 
-You can make PR if you can migrate any native module methods which is not in exisitng in this library.
+If you are having any idea that can help this library to be more useful, you can make PR.
 
 If you are facing any problems while installing this library, feel free to create an issue.
 
